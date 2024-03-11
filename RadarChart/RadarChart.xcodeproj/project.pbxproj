@@ -12,6 +12,9 @@
 		0EE0ACD32B9F9C4B009846D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE0ACD22B9F9C4B009846D2 /* Assets.xcassets */; };
 		0EE0ACD62B9F9C4B009846D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE0ACD52B9F9C4B009846D2 /* Preview Assets.xcassets */; };
 		0EE0ACE02B9FABBB009846D2 /* IronmanStrengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0ACDF2B9FABBB009846D2 /* IronmanStrengthView.swift */; };
+		0EE0ACE22B9FAF10009846D2 /* RadarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0ACE12B9FAF10009846D2 /* RadarChart.swift */; };
+		0EE0ACE52B9FAF3E009846D2 /* RadarChartLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0ACE42B9FAF3E009846D2 /* RadarChartLabels.swift */; };
+		0EE0ACE92B9FB055009846D2 /* RadarChartShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0ACE82B9FB055009846D2 /* RadarChartShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		0EE0ACD22B9F9C4B009846D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EE0ACD52B9F9C4B009846D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0EE0ACDF2B9FABBB009846D2 /* IronmanStrengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IronmanStrengthView.swift; sourceTree = "<group>"; };
+		0EE0ACE12B9FAF10009846D2 /* RadarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarChart.swift; sourceTree = "<group>"; };
+		0EE0ACE42B9FAF3E009846D2 /* RadarChartLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarChartLabels.swift; sourceTree = "<group>"; };
+		0EE0ACE82B9FB055009846D2 /* RadarChartShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarChartShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 		0EE0ACDD2B9F9DA6009846D2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0EE0ACE32B9FAF21009846D2 /* RadarChart */,
 				0EE0ACD02B9F9C4A009846D2 /* ContentView.swift */,
 				0EE0ACDF2B9FABBB009846D2 /* IronmanStrengthView.swift */,
 			);
@@ -92,6 +99,16 @@
 				0EE0ACD22B9F9C4B009846D2 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		0EE0ACE32B9FAF21009846D2 /* RadarChart */ = {
+			isa = PBXGroup;
+			children = (
+				0EE0ACE12B9FAF10009846D2 /* RadarChart.swift */,
+				0EE0ACE42B9FAF3E009846D2 /* RadarChartLabels.swift */,
+				0EE0ACE82B9FB055009846D2 /* RadarChartShape.swift */,
+			);
+			path = RadarChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +184,9 @@
 				0EE0ACD12B9F9C4A009846D2 /* ContentView.swift in Sources */,
 				0EE0ACE02B9FABBB009846D2 /* IronmanStrengthView.swift in Sources */,
 				0EE0ACCF2B9F9C4A009846D2 /* RadarChartApp.swift in Sources */,
+				0EE0ACE22B9FAF10009846D2 /* RadarChart.swift in Sources */,
+				0EE0ACE52B9FAF3E009846D2 /* RadarChartLabels.swift in Sources */,
+				0EE0ACE92B9FB055009846D2 /* RadarChartShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
