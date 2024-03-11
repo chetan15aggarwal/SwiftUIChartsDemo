@@ -17,9 +17,27 @@ struct ContentView: View {
 
 
 struct IronmanStrengthView: View {
+    
+    @State private var durabilityValue: Double = 3
+    @State private var energyValue: Double = 2
+    @State private var fightingSkillValue: Double = 2
+    @State private var intelligenceValue: Double = 3
+    @State private var speedValue: Double = 2
+    @State private var strengthValue: Double = 3
+    
+    let labels: [String] =
+    ["Durability", "Energy", "Fighting Skill", "Intelligence", "Speed", "Strength"]
+    let maxValues: [Double] = [4, 3, 6, 4 , 7, 9]
+    let designInterval: Double = 50
+    let shapeColor: Color = .yellow
+    
+    var data: [Double] {
+        [durabilityValue, energyValue, fightingSkillValue, intelligenceValue, speedValue, strengthValue]
+    }
+    
     var body: some View {
         ZStack {
-            Color.yellow.opacity(1).edgesIgnoringSafeArea(.all)
+            Color.black.opacity(1).edgesIgnoringSafeArea(.all)
             
             ScrollView{
                 Text("IRON MAN")
@@ -37,7 +55,7 @@ struct IronmanStrengthView: View {
                         HStack{
                             Text("Anthony Edward 'Tony' Stark")
                                 .font(.system(size: 25))
-                                .foregroundStyle(.red)
+                                .foregroundStyle(.yellow)
                                 .bold()
                             Spacer()
                         }
@@ -57,15 +75,48 @@ struct IronmanStrengthView: View {
                         Spacer()
                            
                         Rectangle()
-                            .foregroundStyle(.red)
+                            .foregroundStyle(.yellow)
                             .frame(height: 1)
                         Spacer()
                     }
                     Spacer()
                 }
                 Spacer().frame(height: 50)
-            }
-            
+                
+                VStack {
+                    
+                    ForEach(0..<labels.count) { index in
+                        HStack{
+                            Text(labels[index])
+                                .foregroundColor(.red)
+                                .font(.title3)
+                            Spacer()
+                        }
+                        Slider(value: binding(forIndex: index), in: 0...maxValues[index])
+                            .accentColor(shapeColor)
+                       
+                    }
+                }.padding(20)
+            }.padding(20)
+        }
+    }
+    
+    private func binding(forIndex index: Int) -> Binding<Double> {
+        switch index {
+        case 0:
+            return $durabilityValue
+        case 1:
+            return $energyValue
+        case 2:
+            return $fightingSkillValue
+        case 3:
+            return $intelligenceValue
+        case 4:
+            return $speedValue
+        case 5:
+            return $strengthValue
+        default:
+            fatalError("Index out of range")
         }
     }
 }
