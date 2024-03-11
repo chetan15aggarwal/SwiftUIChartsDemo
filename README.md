@@ -10,7 +10,7 @@ Implementation of differennt charts in SwiftUI.
 
 
 ## Screenshots
-![Ironman Radar Chart Screenshot](https://github.com/chetan15aggarwal/SwiftUIChartsDemo/assets/20903001/784a31d7-f57b-4f2d-a25f-676e78db8247)
+![Ironman Radar Chart Screenshot](https://github.com/chetan15aggarwal/SwiftUIChartsDemo/assets/20903001/8b8001cf-f766-4e01-8dc8-bc1fdba97dc7)
 
 
 ## Demo
