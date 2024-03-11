@@ -50,7 +50,7 @@ struct IronmanStrengthView: View {
             VStack {
                 HStack {
                     Rectangle()
-                        .foregroundStyle(.yellow)
+                        .foregroundStyle(.gray)
                     .frame(width: 300, height: 600)
                     .rotationEffect(.degrees(45), anchor: .center)
                     .position(x: 50, y: 0)
@@ -102,6 +102,11 @@ struct IronmanStrengthView: View {
                     Spacer()
                 }
                 Spacer().frame(height: 50)
+                
+                RadarChart(data: data, labels: labels, maxValues: maxValues, designInterval: designInterval, shapeColor: shapeColor)
+                    .frame(height: 250)
+                
+                Spacer()
                 
                 VStack {
                     
